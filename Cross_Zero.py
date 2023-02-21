@@ -31,7 +31,7 @@ def get_sign(sign):
 def check_to_win():
     for each in comb_to_win:
         if (game_board[each[0] - 1]) == (game_board[each[1] - 1]) == (game_board[each[2] - 1]):
-            return 'Кто выиграл?'
+            return game_board[each[0] - 1]
 
     else:
         return False
